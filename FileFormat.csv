@@ -1,0 +1,14 @@
+Participant ID,Timepoint (baseline/Postinjury),Walk Task Condition (ST/HT/ DT),Athlete Intensity,Average Athlete Load,Average Athlete Load Asymmetry,Average Double Support Ratio,Average Duty Factor,Average Duty Factor Asymmetry,Average Flight Duration
+,,,g/s,g,% L/R,ratio,ratio,% L/R,g/s
+1,Baseline,ST,191,23,61,158,1,75,80
+1,Baseline,HT,76,165,4,91,65,149,92
+1,Baseline,DT,170,42,162,115,62,196,163
+1,PI-1,ST,30,117,77,163,153,97,92
+1,PI-1,HT,92,7,19,98,63,70,25
+1,PI-1,DT,170,118,86,100,73,37,183
+1,PI-2,ST,126,98,159,184,125,52,7
+1,PI-2,HT,80,162,101,8,182,116,55
+1,PI-2,DT,44,125,90,39,143,97,179
+1,PI-3,ST,108,183,33,147,159,136,123
+1,PI-3,HT,113,160,25,73,19,123,20
+1,PI-3,DT,200,36,131,159,74,49,152

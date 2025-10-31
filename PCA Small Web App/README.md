@@ -6,6 +6,8 @@ This guide will help you get the PCA Small Web App up and running on your comput
 
 Python is the programming language this app is built with. You need to install it first. If you think python may be already installed, skip ahead to step 3 and try to verify the installation.
 
+> The docs here use `python` for Python related commands. On MacOS/Linux devices you'd typically use `python3` instead of `python` for all python related commands
+
 1.  **Download Python:**
     *   Go to the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
     *   Look for the latest stable version of Python 3 (e.g., Python 3.10.x, 3.11.x, or 3.12.x). Click on the "Download" button for your operating system (Windows, macOS, or Linux).
@@ -124,8 +126,7 @@ To stop the application, go back to the Terminal window where it's running and p
 
 ---
 
-<details>
-<summary>🔍 Having Trouble? Click here for common issues.</summary>
+## Having Trouble?
 
 *   **`command not found` (e.g., `python`):** This usually means Python was not added to your system's PATH. When installing, make sure to check the box that says "Add Python to PATH".
 
@@ -136,8 +137,6 @@ To stop the application, go back to the Terminal window where it's running and p
 *   **Server doesn't start or crashes:**
     *   Look for an **"Address already in use"** error in the terminal. This means another application is using the required port (e.g., 5000). You will need to close that other application or restart your computer.
     *   For any other errors, try to read the message in the terminal carefully. It will often give you a clue as to what went wrong.
-
-</details>
 
 ---
 [Back to root README](../README.md)

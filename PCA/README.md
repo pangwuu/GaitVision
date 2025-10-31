@@ -6,6 +6,8 @@ This guide will help you get the PCA Analysis Tool up and running on your comput
 
 Python is the programming language this application is built with. You need to install it first. If you think python may be already installed, skip ahead to step 3 and try to verify the installation.
 
+> The docs here use `python` for Python related commands. On MacOS/Linux devices you'd typically use `python3` instead of `python` for all python related commands.
+
 1.  **Download Python:**
     *   Go to the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
     *   Download the latest stable version of Python 3 (e.g., Python 3.10.x or newer).
@@ -111,8 +113,7 @@ The application will close automatically after the report is generated. You can 
 
 ---
 
-<details>
-<summary>🔍 Having Trouble? Click here for common issues.</summary>
+## Having trouble?
 
 *   **`command not found` (e.g., `python`):** This usually means Python was not added to your system's PATH. When installing, make sure to check the box that says "Add Python to PATH".
 
@@ -121,8 +122,6 @@ The application will close automatically after the report is generated. You can 
     *   On Windows, if the installation fails with an error mentioning "C++" or "Microsoft Visual C++", you may need to install Microsoft's C++ Build Tools. This is an advanced step, but you can find the tools by searching for "Visual Studio Build Tools".
 
 *   **Script fails to run:** For any errors, try to read the message in the terminal carefully. It will often give you a clue as to what went wrong (e.g., a file could not be found).
-
-</details>
 
 ---
 [Back to root README](../README.md)

@@ -12,6 +12,8 @@ Before you begin, you need to install Python and Node.js.
 
 Python is required for the backend server. If you think python may be already installed, skip ahead to step 3 and try to verify the installation.
 
+> The docs here use `python` for Python related commands. On MacOS/Linux devices you'd typically use `python3` instead of `python` for all python related commands
+
 1.  **Download Python:**
     *   Go to the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
     *   Download the latest stable version of Python 3 (e.g., Python 3.10.x or newer).
@@ -154,8 +156,7 @@ To stop the application, you need to close both the frontend and backend servers
 
 ---
 
-<details>
-<summary>🔍 Having Trouble? Click here for common issues.</summary>
+## Having Trouble?
 
 *   **`command not found` (e.g., `python`, `npm`):** This usually means the program was not added to your system's PATH.
     *   **For Python:** When installing, make sure to check the box that says "Add Python to PATH".
@@ -168,8 +169,6 @@ To stop the application, you need to close both the frontend and backend servers
 *   **Server doesn't start or crashes:**
     *   Look for an **"Address already in use"** error in the terminal. This means another application is using the required port (e.g., 3000 or 5000). You will need to close that other application or restart your computer.
     *   For any other errors, try to read the message in the terminal carefully. It will often give you a clue as to what went wrong.
-
-</details>
 
 ---
 [Back to root README](../README.md)

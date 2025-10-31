@@ -43,7 +43,7 @@ GaitVision is a comprehensive, full-stack web application that provides a rich, 
 
 ## File format overview
 
-In the root directory of this repository is a small CSV file called `FileFormat.csv`. This format provides the required file format for all three applications. Of particular imporance:
+In the root directory of this repository is a small CSV file called [`FileFormat.csv`](./FileFormat.csv). This format provides the required file format for all three applications. Of particular imporance:
 * The first row should have three header columns:
     * `Participant ID` - The ID of the participant
     * `Timepoint (baseline/Postinjury)` - The timepoint of the experiment being taken. Ensure these are common across the normalisation and patient files.
@@ -52,4 +52,4 @@ In the root directory of this repository is a small CSV file called `FileFormat.
 * The second row should have the units associated with each variable. The second row of the first three columns can be empty
 * The remaining cells can be filled with data, as shown.
 * For the PCA tools and the normalisation part of GaitVision, ensure that you upload `all patient data` for the modules to perform accurate PCA analysis.
-* For the `patient upload` ensure you upload a single patient's data, similar to the file format shown shown in `FileFormat.csv`
+* For the `patient upload` ensure you upload a single patient's data, similar to the file format shown shown in [`FileFormat.csv`](./FileFormat.csv)

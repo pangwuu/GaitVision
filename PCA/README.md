@@ -4,7 +4,7 @@ This guide will help you get the PCA Analysis Tool up and running on your comput
 
 ## Step 1: Install Python
 
-Python is the programming language this application is built with. You need to install it first.
+Python is the programming language this application is built with. You need to install it first. If you think python may be already installed, skip ahead to step 3 and try to verify the installation.
 
 1.  **Download Python:**
     *   Go to the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
@@ -31,6 +31,17 @@ Python is the programming language this application is built with. You need to i
         ```bash
         cd "/path/to/your/COMP3888 public/PCA"
         ```
+
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\PCA"`.
+
+<details>
+<summary>💡 Pro Tip: How to copy a file path</summary>
+
+*   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
+*   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
+
+You can then paste this path directly into the terminal after typing `cd `.
+</details>
 
 ## Step 3: Create and Activate a Virtual Environment
 
@@ -87,6 +98,19 @@ Now, install the specific libraries the application needs.
 ## When You're Done
 
 The application will close automatically after the report is generated. You can then close the Terminal window. To use it again, just follow Step 5 and Step 6.
+
+---
+
+<details>
+<summary>🔍 Having Trouble? Click here for common issues.</summary>
+
+*   **`command not found` (e.g., `python`):** This usually means Python was not added to your system's PATH. When installing, make sure to check the box that says "Add Python to PATH".
+
+*   **`pip install` fails:** This is often a network issue. Make sure you are connected to the internet. If you are on a corporate or university network, you may need to configure a proxy.
+
+*   **Script fails to run:** For any errors, try to read the message in the terminal carefully. It will often give you a clue as to what went wrong (e.g., a file could not be found).
+
+</details>
 
 ---
 [Back to root README](../README.md)

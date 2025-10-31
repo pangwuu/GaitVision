@@ -10,7 +10,7 @@ Before you begin, you need to install Python and Node.js.
 
 ### 1. Install Python
 
-Python is required for the backend server.
+Python is required for the backend server. If you think python may be already installed, skip ahead to step 3 and try to verify the installation.
 
 1.  **Download Python:**
     *   Go to the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
@@ -21,7 +21,7 @@ Python is required for the backend server.
     *   **macOS:** Run the downloaded `.pkg` file and follow the on-screen instructions.
 
 3.  **Verify Installation:**
-    *   Open "Terminal" (macOS) or "Command Prompt" (Windows) and type `python3 --version`. You should see a version number.
+    *   Open "Terminal" (macOS) or "Command Prompt" (Windows) and type `python --version`. You should see a version number.
 
 ### 2. Install Node.js and npm
 
@@ -48,15 +48,26 @@ This server handles data processing.
     *   **macOS:** Search for "Terminal" in Spotlight (Cmd + Space).
 
 2.  **Navigate to the `flask-server` Folder:**
-    *   Use the `cd` command. Type `cd ` (with a space), then drag and drop the **`flask-server`** folder (located inside the `Website` folder) into the Terminal window. Press Enter.
+    *   Use the `cd` command. Type `cd ` (with a space), then drag and drop the **`flask-server`** folder (located inside the `GaitVision` folder) into the Terminal window. Press Enter.
         ```bash
-        cd "/path/to/your/COMP3888 public/Website/flask-server"
+        cd "/path/to/your/COMP3888 public/GaitVision/flask-server"
         ```
+
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\GaitVision\flask-server"`.
+
+<details>
+<summary>💡 Pro Tip: How to copy a file path</summary>
+
+*   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
+*   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
+
+You can then paste this path directly into the terminal after typing `cd `.
+</details>
 
 3.  **Create and Activate a Virtual Environment:**
     *   Create the environment:
         ```bash
-        python3 -m venv venv
+        python -m venv venv
         ```
     *   Activate it:
         *   **Windows:** `.\venv\Scripts\activate`
@@ -72,7 +83,7 @@ This server handles data processing.
 5.  **Start the Backend Server:**
     *   Run the following command:
         ```bash
-        python3 server.py
+        python server.py
         ```
 
 6.  **Leave it Running:**
@@ -88,10 +99,12 @@ This is the visual part of the application that you will interact with.
     *   This is very important. You need a **second** terminal window. Do not close the first one.
 
 2.  **Navigate to the `client` Folder:**
-    *   In your new terminal, use the `cd` command to go to the **`client`** folder (located inside the `Website` folder).
+    *   In your new terminal, use the `cd` command to go to the **`client`** folder (located inside the `GaitVision` folder).
         ```bash
-        cd "/path/to/your/COMP3888 public/Website/client"
+        cd "/path/to/your/COMP3888 public/GaitVision/client"
         ```
+
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\GaitVision\client"`.
 
 3.  **Install Dependencies:**
     *   Run the following command. This might take a few minutes.
@@ -120,6 +133,23 @@ To stop the application, you need to close both the frontend and backend servers
 1.  Go to each of your two terminal windows.
 2.  Press `Ctrl + C` in each window.
 3.  You can then safely close the terminals.
+
+---
+
+<details>
+<summary>🔍 Having Trouble? Click here for common issues.</summary>
+
+*   **`command not found` (e.g., `python`, `npm`):** This usually means the program was not added to your system's PATH.
+    *   **For Python:** When installing, make sure to check the box that says "Add Python to PATH".
+    *   **For Node.js/npm:** The installer should do this automatically. If not, re-installing the LTS version is the easiest fix.
+
+*   **`pip install` or `npm install` fails:** This is often a network issue. Make sure you are connected to the internet. If you are on a corporate or university network, you may need to configure a proxy.
+
+*   **Server doesn't start or crashes:**
+    *   Look for an **"Address already in use"** error in the terminal. This means another application is using the required port (e.g., 3000 or 5000). You will need to close that other application or restart your computer.
+    *   For any other errors, try to read the message in the terminal carefully. It will often give you a clue as to what went wrong.
+
+</details>
 
 ---
 [Back to root README](../README.md)

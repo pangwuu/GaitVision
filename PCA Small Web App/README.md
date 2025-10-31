@@ -4,7 +4,7 @@ This guide will help you get the PCA Small Web App up and running on your comput
 
 ## Step 1: Install Python
 
-Python is the programming language this app is built with. You need to install it first.
+Python is the programming language this app is built with. You need to install it first. If you think python may be already installed, skip ahead to step 3 and try to verify the installation.
 
 1.  **Download Python:**
     *   Go to the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
@@ -35,8 +35,19 @@ The "Terminal" (or "Command Prompt" / "PowerShell") is where you'll type command
     *   Type `cd ` (note the space after `cd`), then drag and drop your "PCA Small Web app" folder directly into the Terminal window. This will automatically fill in the path. Press Enter.
     *   It should look something like this (your path will be different):
         ```bash
-        cd /Users/johnnywu/Desktop/Uni/Sem 2/COMP3888/COMP3888_M15_02_P23/PCA Small Web app
+        cd "/path/to/your/COMP3888 public/PCA Small Web App"
         ```
+
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\PCA Small Web App"`.
+
+<details>
+<summary>💡 Pro Tip: How to copy a file path</summary>
+
+*   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
+*   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
+
+You can then paste this path directly into the terminal after typing `cd `.
+</details>
 
 ## Step 3: Create and Activate a Virtual Environment (Recommended)
 
@@ -105,6 +116,21 @@ Almost there! Now you can start the app.
 ## When You're Done
 
 To stop the application, go back to the Terminal window where it's running and press `Ctrl + C` (hold down the Control key and press C). To exit the virtual environment, simply type `deactivate` and press Enter.
+
+---
+
+<details>
+<summary>🔍 Having Trouble? Click here for common issues.</summary>
+
+*   **`command not found` (e.g., `python`):** This usually means Python was not added to your system's PATH. When installing, make sure to check the box that says "Add Python to PATH".
+
+*   **`pip install` fails:** This is often a network issue. Make sure you are connected to the internet. If you are on a corporate or university network, you may need to configure a proxy.
+
+*   **Server doesn't start or crashes:**
+    *   Look for an **"Address already in use"** error in the terminal. This means another application is using the required port (e.g., 5000). You will need to close that other application or restart your computer.
+    *   For any other errors, try to read the message in the terminal carefully. It will often give you a clue as to what went wrong.
+
+</details>
 
 ---
 [Back to root README](../README.md)

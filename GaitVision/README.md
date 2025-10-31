@@ -1,0 +1,122 @@
+# How to Run the GaitVision Web Application
+
+This guide will help you get the GaitVision web application running on your local computer. This is a two-part application, meaning it has a **backend** (the server) and a **frontend** (the user interface). Both must be running at the same time.
+
+Please follow these instructions carefully.
+
+## Prerequisites: Install Required Software
+
+Before you begin, you need to install Python and Node.js.
+
+### 1. Install Python
+
+Python is required for the backend server.
+
+1.  **Download Python:**
+    *   Go to the official Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+    *   Download the latest stable version of Python 3 (e.g., Python 3.10.x or newer).
+
+2.  **Install Python:**
+    *   **Windows:** Run the downloaded `.exe` file. **IMPORTANT:** Check the box that says "Add Python to PATH" during installation, and then click "Install Now".
+    *   **macOS:** Run the downloaded `.pkg` file and follow the on-screen instructions.
+
+3.  **Verify Installation:**
+    *   Open "Terminal" (macOS) or "Command Prompt" (Windows) and type `python3 --version`. You should see a version number.
+
+### 2. Install Node.js and npm
+
+Node.js and npm are required for the frontend user interface.
+
+1.  **Download Node.js:**
+    *   Go to the official Node.js website: [https://nodejs.org/](https://nodejs.org/)
+    *   Download the **LTS (Long Term Support)** version.
+
+2.  **Install Node.js:**
+    *   Run the downloaded installer and follow the on-screen instructions. npm (Node Package Manager) is included with the installation.
+
+3.  **Verify Installation:**
+    *   In a new Terminal or Command Prompt window, type `node --version` and press Enter. You should see a version number.
+
+---
+
+## Part 1: Running the Backend (API Server)
+
+This server handles data processing.
+
+1.  **Open a Terminal:**
+    *   **Windows:** Search for "Command Prompt" or "PowerShell" in your Start Menu.
+    *   **macOS:** Search for "Terminal" in Spotlight (Cmd + Space).
+
+2.  **Navigate to the `flask-server` Folder:**
+    *   Use the `cd` command. Type `cd ` (with a space), then drag and drop the **`flask-server`** folder (located inside the `Website` folder) into the Terminal window. Press Enter.
+        ```bash
+        cd "/path/to/your/COMP3888 public/Website/flask-server"
+        ```
+
+3.  **Create and Activate a Virtual Environment:**
+    *   Create the environment:
+        ```bash
+        python3 -m venv venv
+        ```
+    *   Activate it:
+        *   **Windows:** `.\venv\Scripts\activate`
+        *   **macOS/Linux:** `source venv/bin/activate`
+    *   You should see `(venv)` at the beginning of your prompt.
+
+4.  **Install Dependencies:**
+    *   With the virtual environment activated, run:
+        ```bash
+        pip install -r requirements.txt
+        ```
+
+5.  **Start the Backend Server:**
+    *   Run the following command:
+        ```bash
+        python3 server.py
+        ```
+
+6.  **Leave it Running:**
+    *   The backend server is now running. You will see some output in the terminal. **You must leave this terminal window open.**
+
+---
+
+## Part 2: Running the Frontend (User Interface)
+
+This is the visual part of the application that you will interact with.
+
+1.  **Open a NEW Terminal:**
+    *   This is very important. You need a **second** terminal window. Do not close the first one.
+
+2.  **Navigate to the `client` Folder:**
+    *   In your new terminal, use the `cd` command to go to the **`client`** folder (located inside the `Website` folder).
+        ```bash
+        cd "/path/to/your/COMP3888 public/Website/client"
+        ```
+
+3.  **Install Dependencies:**
+    *   Run the following command. This might take a few minutes.
+        ```bash
+        npm install
+        ```
+
+4.  **Start the Frontend:**
+    *   After the installation is complete, run:
+        ```bash
+        npm start
+        ```
+
+---
+
+## Part 3: Access the Application
+
+*   After running `npm start`, your default web browser should automatically open a new tab to `http://localhost:3000`.
+*   If it doesn't, you can manually open your browser and go to that address.
+*   You should now see the GaitVision application!
+
+## When You're Done
+
+To stop the application, you need to close both the frontend and backend servers.
+
+1.  Go to each of your two terminal windows.
+2.  Press `Ctrl + C` in each window.
+3.  You can then safely close the terminals.

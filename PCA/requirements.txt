@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+matplotlib
+scipy
+numpy
+pyqt5
+pca
+matplotlib
+reportlab
+factor_analyzer

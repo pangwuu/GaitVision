@@ -1,0 +1,41 @@
+.pca-suggestions-box {
+  background-color: #f8f9fa; /* A very light grey, almost white */
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+}
+
+.pca-suggestions-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #19535F; /* Use the primary theme color */
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.pca-suggestions-list {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none; /* No bullet points */
+}
+
+.pca-suggestion-item {
+  padding: 5px 0px;
+  font-size: 13px;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.pca-suggestion-item .material-symbols-outlined {
+    margin-right: 6px;
+    font-size: 16px;
+    color: #19535F;
+    /* Align icon with text */
+    position: relative;
+    top: -1px;
+}
+

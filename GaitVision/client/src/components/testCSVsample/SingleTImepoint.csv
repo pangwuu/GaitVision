@@ -1,0 +1,5 @@
+Participant ID,Timepoint (baseline/Postinjury),Walk Task Condition (ST/HT/ DT),Athlete Intensity,Average Athlete Load,Average Athlete Load Asymmetry,Average Double Support Ratio,Average Duty Factor,Average Duty Factor Asymmetry
+,,,g/s,g,% L/R,ratio,ratio,% L/R
+1,Baseline,ST,0.680379207,0.13241818,0.413338808,0.62756395,0.648104147,0.41215244
+1,Baseline,HT,0.590357796,0.073023795,0.912416839,0.220345656,0.379130216,0.076594169
+1,Baseline,DT,0.550917474,0.124375006,0.369294155,0.307788943,0.877019413,0.406325382

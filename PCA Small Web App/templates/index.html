@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCA Analysis Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PCA Analysis Tool</h1>
+        <p class="subtitle">Upload your CSV file and get comprehensive PCA analysis results</p>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <form method="POST" action="{{ url_for('analyze') }}" enctype="multipart/form-data" id="uploadForm">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <label for="file" class="file-label">
+                    Click to browse or drag and drop your CSV file here
+                </label>
+                <input type="file" name="file" id="file" accept=".csv" required>
+                <div class="selected-file" id="selectedFile">
+                    <strong>Selected:</strong> <span id="fileName"></span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="rotation">Rotation Method</label>
+                <select name="rotation" id="rotation">
+                    <option value="">None (Standard PCA)</option>
+                    <option value="varimax">Varimax</option>
+                    <option value="promax">Promax</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn" id="submitBtn">
+                Analyze Data
+            </button>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Analyzing your data... This may take a minute.</p>
+            </div>
+        </form>
+        
+        <div class="info-box">
+            <strong>What does this tool do?</strong><br>
+            Performs Principal Component Analysis (PCA) on your CSV data and generates a comprehensive PDF report with visualizations, loadings, and variable importance rankings.
+        </div>
+        <div class="info-box">
+        <strong>Troubleshooting</strong><br>
+        Common issues include:
+        <ol>
+            <li class="small-info-box">
+            <b>Data Processing Error:</b> Check that your CSV file contains numeric data.
+            Columns with text or only missing values will cause errors.
+            Non-numeric headers are allowed.
+            </li>
+            <li class="small-info-box">
+            <b>PCA Calculation Error:</b>
+            This can happen if your dataset has too few rows (less than 2)
+            or if a column has no variance (all values are the same).
+            </li>
+            <li class="small-info-box">
+            <b>File Format:</b> Ensure your file is a standard, comma-separated CSV.
+            </li>
+        </ol>
+        </div>
+        
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

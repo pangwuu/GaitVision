@@ -1,0 +1,6 @@
+Timepoint (baseline/Postinjury),Athlete Intensity,Average Athlete Load,Average Athlete Load Asymmetry,Average Double Support Ratio,Average Duty Factor
+Units,g/s,g,% L/R,ratio,ratio
+Baseline,0.988425575,0.569632778,0.959729936,0.86646694,0.028400092
+PI-1,0.994899985,0.783497887,0.614710546,0.16401245,0.065784892
+PI-2,0.476953795,0.099142241,0.840316535,0.795846058,0.889724822
+PI-3,0.347133304,0.88731883,0.689942238,0.447610302,0.052713679

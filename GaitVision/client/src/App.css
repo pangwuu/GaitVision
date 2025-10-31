@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+div {
+  font-family: Roboto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.gait {
+  color: #19535F;
+  font-weight: bold;
+}
+
+.vision {
+  color: #13ac95;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5%;
+}
+
+.left-panel{
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.csv-upload {
+  background: white;
+  border: 3px solid #19535F;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.radar-plot {
+  grid-row: 1/3;
+  background: white;
+  border: 3px solid #19535F;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+
+}
+
+.calibrator {
+  grid-row: 1/3;
+  background: white;
+  border: 3px solid #19535F;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+}
+
+.file-info {
+    background: white;
+    border: 1px solid #19535F;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.file-header {
+    background: #19535F;
+    color: white;
+    padding: 4%;
+    font-weight: 500;
+}
+
+.metrics-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.metric-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.metric-item:hover {
+    background-color: #f0f8f0;
+}
+
+.metric-item.selected {
+    background-color: #e8f5e8;
+}
+
+.metric-radio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    margin-right: 12px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.metric-radio.checked {
+    border-color: #19535F;
+    background-color: #19535F;
+}
+
+.metric-radio.checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+.metric-label {
+    font-size: 14px;
+    color: #333;
+    flex: 1;
+}
+
+.right-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+.task-section {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.task-selection-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.task-button-group {
+    display: flex;
+    justify-content: space-between; /* space evenly between buttons */
+    gap: 15px; /* optional: adds space between buttons */
+}
+
+.task-button {
+    background: #f6dca5;
+    color: #333;
+    border: 1px solid transparent;
+    border-color: #f6c865;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: all 0.2s;
+}
+
+.task-button:hover {
+    background: #f6c865;
+    border: 1px solid #f8f8f8;
+}
+
+.task-button.active {
+    background:  #f6c865;
+    border-color:  #f6c865;
+    color: #6e4e03;
+}
+
+.compare-section {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.compare-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.baseline-btn {
+    background: #b0bec5;
+    color: #333;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.compare-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.compare-item {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.compare-item:hover {
+    background: #ddd;
+    border: 1px solid #f8f8f8;
+}
+
+.compare-item.active {
+    font-weight: 500;
+}
+
+.compare-item.active1 {
+    background: #c8e6c9;
+    border-color: #4caf50;
+    color: #2e7d32;
+}
+
+.compare-item.active2 {
+background: #bbdefb;
+border-color: #2196f3;
+color: #0d47a1;
+}
+
+.compare-item.active3 {
+background: #FFFACD;
+border-color: #B8860B;
+color: #8B6508;
+}
+
+.compare-item.active4 {
+background: #FFD1DC;
+border-color: #C71585;
+color: #8B004B;
+}
+
+
+
+.normalised{
+    background: white;
+    border: 1px solid red;
+    color: red;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.download-section {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+/* 
+.pdf-download-btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+
+
+} */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

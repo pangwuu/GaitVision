@@ -50,10 +50,10 @@ This server handles data processing.
 2.  **Navigate to the `flask-server` Folder:**
     *   **This is a crucial step.** All of the following commands must be run from inside the correct project folder.
         ```bash
-        cd "/path/to/your/COMP3888 public/GaitVision/flask-server"
+        cd "/path/to/your/GaitVision-main/GaitVision/flask-server"
         ```
 
-        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\GaitVision\flask-server"`.
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\GaitVision-main\GaitVision\flask-server"`.
 
 > **💡 Pro Tip: How to Copy a File Path**
 > 
@@ -118,10 +118,10 @@ This is the visual part of the application that you will interact with.
 2.  **Navigate to the `client` Folder:**
     *   In your new terminal, use the `cd` command to go to the **`client`** folder (located inside the `GaitVision` folder).
         ```bash
-        cd "/path/to/your/COMP3888 public/GaitVision/client"
+        cd "/path/to/your/GaitVision-main/GaitVision/client"
         ```
 
-        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\GaitVision\client"`.
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\GaitVision-main\GaitVision\client"`.
 
 3.  **Install Dependencies:**
     *   Run the following command. This might take a few minutes.

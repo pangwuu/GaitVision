@@ -1,6 +1,6 @@
 # COMP3888 Project: Data Analysis and Visualisation Tools
 
-This project contains three primary applications developed for data analysis and visualisation: a standalone PCA Analysis Tool, a simple PCA web app, and the full-stack GaitVision Web Application.
+This project contains three primary applications developed for data analysis and visualisation: a standalone PCA Analysis tool, a simple PCA web app, and the full-stack GaitVision Web Application.
 
 Each application is contained within its own directory and includes a detailed `README.md` file with specific setup instructions.
 
@@ -12,7 +12,7 @@ To download the source files for this project, go to the [repo](https://github.c
 
 ### 1. PCA Analysis Tool (`/PCA`)
 
-This is a standalone desktop application for performing Principal Component Analysis (PCA) on CSV datasets. It is intended for users who need to run a quick, in-depth statistical analysis locally.
+This is a standalone desktop application for performing Principal Component Analysis (PCA) on CSV datasets. It is intended for users who need to run a quick, in-depth statistical analysis locally. This is a prototype tool and is not designed or supported for much longer.
 
 *   **Purpose:** To provide a powerful, GUI-driven tool for comprehensive PCA.
 *   **Features:** Automated data preprocessing, PCA execution, and the generation of detailed PDF reports including plots, loading matrices, and variable rankings.
@@ -20,7 +20,7 @@ This is a standalone desktop application for performing Principal Component Anal
 
 ### 2. PCA Small Web App (`/PCA Small Web App`)
 
-This is a lightweight, local web application that performs a simplified PCA on an uploaded CSV file and displays the results in the browser.
+This is a lightweight, local web application that performs the same PCA algorithm on an uploaded CSV file and downloads the required PCA report. Notably, it is much faster than the PCA executable tool and can perform the same analysis much faster than the original PCA tool.
 
 *   **Purpose:** To offer a simple, web-based interface for quick PCA tasks without the need for a complex setup.
 *   **Features:** A straightforward web page to upload a file, which then runs the analysis and presents the key results.

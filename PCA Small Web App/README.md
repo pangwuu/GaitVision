@@ -32,10 +32,10 @@ The "Terminal" (or "Command Prompt" / "PowerShell") is where you'll type command
     *   **This is a crucial step.** All of the following commands must be run from inside the correct project folder.
     *   It should look something like this (your path will be different):
         ```bash
-        cd "/path/to/your/COMP3888 public/PCA Small Web App"
+        cd "/path/to/your/GaitVision-main/PCA Small Web App"
         ```
 
-        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\PCA Small Web App"`.
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\GaitVision-main\PCA Small Web App"`.
 
 > **💡 Pro Tip: How to Copy a File Path**
 > 

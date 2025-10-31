@@ -28,10 +28,10 @@ Python is the programming language this application is built with. You need to i
     *   **This is a crucial step.** All of the following commands must be run from inside the correct project folder.
     *   It should look something like this (your path will be different):
         ```bash
-        cd "/path/to/your/COMP3888 public/PCA"
+        cd "/path/to/your/GaitVision-main/PCA"
         ```
 
-        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\PCA"`.
+        > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\GaitVision-main\PCA"`.
 
 > **💡 Pro Tip: How to Copy a File Path**
 > 

@@ -120,3 +120,6 @@ To stop the application, you need to close both the frontend and backend servers
 1.  Go to each of your two terminal windows.
 2.  Press `Ctrl + C` in each window.
 3.  You can then safely close the terminals.
+
+---
+[Back to root README](../README.md)

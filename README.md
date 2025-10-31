@@ -22,7 +22,7 @@ This is a lightweight, local web application that performs a simplified PCA on a
 
 *   **Purpose:** To offer a simple, web-based interface for quick PCA tasks without the need for a complex setup.
 *   **Features:** A straightforward web page to upload a file, which then runs the analysis and presents the key results.
-*   **How to Run:** For detailed instructions, please see the [`PCA Small Web App/README.md`](./PCA%20Small%20Web%20App/README.md) file.
+*   **How to Run:** For detailed instructions, please see the [`PCA Small Web App/README.md`](./PCA Small Web App/README.md) file.
 
 ### 3. GaitVision Web Application (`/GaitVision`)
 

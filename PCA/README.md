@@ -87,3 +87,6 @@ Now, install the specific libraries the application needs.
 ## When You're Done
 
 The application will close automatically after the report is generated. You can then close the Terminal window. To use it again, just follow Step 5 and Step 6.
+
+---
+[Back to root README](../README.md)

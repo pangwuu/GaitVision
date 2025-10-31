@@ -105,3 +105,6 @@ Almost there! Now you can start the app.
 ## When You're Done
 
 To stop the application, go back to the Terminal window where it's running and press `Ctrl + C` (hold down the Control key and press C). To exit the virtual environment, simply type `deactivate` and press Enter.
+
+---
+[Back to root README](../README.md)

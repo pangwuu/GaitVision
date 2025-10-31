@@ -29,7 +29,7 @@ Node.js and npm are required for the frontend user interface.
 
 1.  **Download Node.js:**
     *   Go to the official Node.js website: [https://nodejs.org/](https://nodejs.org/)
-    *   Download the **LTS (Long Term Support)** version.
+    *   Download the **LTS (Long Term Support)** version – click “Windows Installer (.msi)” or the `.pkg` file (MacOS).
 
 2.  **Install Node.js:**
     *   Run the downloaded installer and follow the on-screen instructions. npm (Node Package Manager) is included with the installation.

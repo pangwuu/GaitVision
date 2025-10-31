@@ -36,6 +36,7 @@ The "Terminal" (or "Command Prompt" / "PowerShell") is where you'll type command
         ```
 
         > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\GaitVision-main\PCA Small Web App"`.
+    * For this web app, please ensure that the file path is enclosed in quotes.
 
 > **💡 Pro Tip: How to Copy a File Path**
 > 

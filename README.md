@@ -4,7 +4,7 @@ This project contains three primary applications developed for data analysis and
 
 Each application is contained within its own directory and includes a detailed `README.md` file with specific setup instructions.
 
-To download the source files for this project, go into 
+To download the source files for this project, go to the [repo](https://github.com/pangwuu/GaitVision), click the green `Code` button, and click `Download ZIP`.
 
 ---
 

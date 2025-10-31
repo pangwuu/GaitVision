@@ -77,7 +77,7 @@ Now, install the specific libraries the application needs.
 ## Step 6: Use the Application
 
 1.  **Select a File:**
-    *   A file selection window will pop up. Use this to navigate to and select the CSV file you want to analyze.
+    *   A file selection window will pop up. Use this to navigate to and select the CSV file you want to analyse.
 
 2.  **Analysis and Report:**
     *   The application will run the analysis. This may take a few moments.

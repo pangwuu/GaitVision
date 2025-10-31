@@ -1,6 +1,6 @@
-# COMP3888 Project: Data Analysis and Visualization Tools
+# COMP3888 Project: Data Analysis and Visualisation Tools
 
-This project contains three primary applications developed for data analysis and visualization: a standalone PCA Analysis Tool, a simple PCA web app, and the full-stack GaitVision Web Application.
+This project contains three primary applications developed for data analysis and visualisation: a standalone PCA Analysis Tool, a simple PCA web app, and the full-stack GaitVision Web Application.
 
 Each application is contained within its own directory and includes a detailed `README.md` file with specific setup instructions.
 
@@ -26,13 +26,13 @@ This is a lightweight, local web application that performs a simplified PCA on a
 
 ### 3. GaitVision Web Application (`/GaitVision`)
 
-GaitVision is a comprehensive, full-stack web application that provides a rich, interactive interface for analyzing and visualizing gait analysis data. It is designed to help clinicians and researchers compare a patient's metrics against a normalized baseline population.
+GaitVision is a comprehensive, full-stack web application that provides a rich, interactive interface for analysing and visualising gait analysis data. It is designed to help clinicians and researchers compare a patient's metrics against a normalised baseline population.
 
 *   **Purpose:** To provide an advanced, interactive tool for clinical gait analysis.
 *   **Features:**
-    *   A **backend API** (`/GaitVision/flask-server`) for data processing, normalization, and PCA-based variable suggestions.
+    *   A **backend API** (`/GaitVision/flask-server`) for data processing, normalisation, and PCA-based variable suggestions.
     *   An **interactive frontend** (`/GaitVision/client`) for uploading calibration and patient data.
-    *   Dynamic **radar chart visualizations** that use Z-scores to show patient deviation from a population average.
+    *   Dynamic **radar chart visualisations** that use Z-scores to show patient deviation from a population average.
     *   The ability to filter by variables, walk tasks, and timepoints.
     *   Downloadable PDF summaries of the analysis.
 *   **How to Run:** This is a two-part application requiring both a backend and frontend server. Detailed setup instructions can be found in the [`GaitVision/README.md`](./GaitVision/README.md) file.

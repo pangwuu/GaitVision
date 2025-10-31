@@ -52,15 +52,27 @@ This creates a self-contained environment for the application's dependencies.
         ```
 
 2.  **Activate the Virtual Environment:**
-    *   **Windows:**
+
+    Now, activate the environment based on your operating system.
+
+    #### On macOS / Linux
+    In your terminal, run:
+    ```bash
+    source venv/bin/activate
+    ```
+
+    #### On Windows
+    For simplicity, we recommend using **Command Prompt** for the following steps.
+
+    *   **In Command Prompt:**
+        ```bash
+        .\venv\Scripts\activate
+        ```
+    *   **In PowerShell:**
         ```bash
         .\venv\Scripts\Activate.ps1
         ```
-        > **PowerShell Users:** If you see an error running this script, you may need to open PowerShell as an Administrator and run the command `Set-ExecutionPolicy RemoteSigned` to allow scripts to execute.
-    *   **macOS/Linux:**
-        ```bash
-        source venv/bin/activate
-        ```
+        > **Note:** If you get an error using PowerShell, you may need to run it as an Administrator and execute the command `Set-ExecutionPolicy RemoteSigned`. Using Command Prompt is often easier.
     *   You'll know it's activated when you see `(venv)` at the beginning of your Terminal prompt.
 
 ## Step 4: Install Project Dependencies

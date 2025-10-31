@@ -42,7 +42,7 @@ The "Terminal" (or "Command Prompt" / "PowerShell") is where you'll type command
 > *   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
 > *   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
 > 
-> You can then paste this path directly into the terminal after typing `cd `.
+> You can then paste this path directly into the terminal after typing `cd `. Ensure you provide quotes around the file path as well.
 
 ## Step 3: Create and Activate a Virtual Environment (Recommended)
 
@@ -57,19 +57,27 @@ A virtual environment keeps the app's dependencies separate from other Python pr
     *   This will create a new folder named `venv` inside your project folder.
 
 2.  **Activate the Virtual Environment:**
-    *   **Windows (Command Prompt):**
+
+    Now, activate the environment based on your operating system.
+
+    #### On Windows
+    For simplicity, we recommend using **Command Prompt** for the following steps.
+
+    *   **In Command Prompt:**
         ```bash
         .\venv\Scripts\activate
         ```
-    *   **Windows (PowerShell):**
+    *   **In PowerShell:**
         ```bash
         .\venv\Scripts\Activate.ps1
         ```
-        > **PowerShell Users:** If you see an error running this script, you may need to open PowerShell as an Administrator and run the command `Set-ExecutionPolicy RemoteSigned` to allow scripts to execute.
-    *   **macOS/Linux:**
-        ```bash
-        source venv/bin/activate
-        ```
+        > **Note:** If you get an error using PowerShell, you may need to run it as an Administrator and execute the command `Set-ExecutionPolicy RemoteSigned`. Using Command Prompt is often easier.
+
+    #### On macOS / Linux
+    In your terminal, run:
+    ```bash
+    source venv/bin/activate
+    ```
     *   You'll know it's activated because `(venv)` will appear at the beginning of your Terminal prompt.
 
 ## Step 4: Install Project Dependencies

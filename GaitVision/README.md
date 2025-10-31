@@ -68,12 +68,27 @@ This server handles data processing.
         python -m venv venv
         ```
     *   Activate it:
-    *   **Windows (PowerShell):**
+
+        Now, activate the environment based on your operating system.
+
+        #### On macOS / Linux
+        In your terminal, run:
         ```bash
-        .\venv\Scripts\Activate.ps1
+        source venv/bin/activate
         ```
-        > **PowerShell Users:** If you see an error running this script, you may need to open PowerShell as an Administrator and run the command `Set-ExecutionPolicy RemoteSigned` to allow scripts to execute.
-        *   **macOS/Linux:** `source venv/bin/activate`
+
+        #### On Windows
+        For simplicity, we recommend using **Command Prompt** for the following steps.
+
+        *   **In Command Prompt:**
+            ```bash
+            .\venv\Scripts\activate
+            ```
+        *   **In PowerShell:**
+            ```bash
+            .\venv\Scripts\Activate.ps1
+            ```
+            > **Note:** If you get an error using PowerShell, you may need to run it as an Administrator and execute the command `Set-ExecutionPolicy RemoteSigned`. Using Command Prompt is often easier.
     *   You should see `(venv)` at the beginning of your prompt.
 
 4.  **Install Dependencies:**

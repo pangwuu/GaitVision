@@ -48,21 +48,19 @@ This server handles data processing.
     *   **macOS:** Search for "Terminal" in Spotlight (Cmd + Space).
 
 2.  **Navigate to the `flask-server` Folder:**
-    *   Use the `cd` command. Type `cd ` (with a space), then drag and drop the **`flask-server`** folder (located inside the `GaitVision` folder) into the Terminal window. Press Enter.
+    *   **This is a crucial step.** All of the following commands must be run from inside the correct project folder.
         ```bash
         cd "/path/to/your/COMP3888 public/GaitVision/flask-server"
         ```
 
         > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\GaitVision\flask-server"`.
 
-<details>
-<summary>💡 Pro Tip: How to copy a file path</summary>
-
-*   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
-*   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
-
-You can then paste this path directly into the terminal after typing `cd `.
-</details>
+> **💡 Pro Tip: How to Copy a File Path**
+> 
+> *   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
+> *   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
+> 
+> You can then paste this path directly into the terminal after typing `cd `.
 
 3.  **Create and Activate a Virtual Environment:**
     *   Create the environment:
@@ -70,7 +68,11 @@ You can then paste this path directly into the terminal after typing `cd `.
         python -m venv venv
         ```
     *   Activate it:
-        *   **Windows:** `.\venv\Scripts\activate`
+    *   **Windows (PowerShell):**
+        ```bash
+        .\venv\Scripts\Activate.ps1
+        ```
+        > **PowerShell Users:** If you see an error running this script, you may need to open PowerShell as an Administrator and run the command `Set-ExecutionPolicy RemoteSigned` to allow scripts to execute.
         *   **macOS/Linux:** `source venv/bin/activate`
     *   You should see `(venv)` at the beginning of your prompt.
 
@@ -111,6 +113,7 @@ This is the visual part of the application that you will interact with.
         ```bash
         npm install
         ```
+        > **Note:** Don't worry if you see many `WARN` messages during the installation. This is normal for `npm`, and the command should still succeed.
 
 4.  **Start the Frontend:**
     *   After the installation is complete, run:
@@ -143,7 +146,9 @@ To stop the application, you need to close both the frontend and backend servers
     *   **For Python:** When installing, make sure to check the box that says "Add Python to PATH".
     *   **For Node.js/npm:** The installer should do this automatically. If not, re-installing the LTS version is the easiest fix.
 
-*   **`pip install` or `npm install` fails:** This is often a network issue. Make sure you are connected to the internet. If you are on a corporate or university network, you may need to configure a proxy.
+*   **`pip install` or `npm install` fails:**
+    *   This can be a network issue. Make sure you are connected to the internet.
+    *   If `pip install` fails on Windows with an error mentioning "C++" or "Microsoft Visual C++", you may need to install Microsoft's C++ Build Tools. This is an advanced step, but you can find the tools by searching for "Visual Studio Build Tools".
 
 *   **Server doesn't start or crashes:**
     *   Look for an **"Address already in use"** error in the terminal. This means another application is using the required port (e.g., 3000 or 5000). You will need to close that other application or restart your computer.

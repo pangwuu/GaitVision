@@ -29,10 +29,7 @@ The "Terminal" (or "Command Prompt" / "PowerShell") is where you'll type command
     *   **Linux:** Look for "Terminal" in your applications menu.
 
 2.  **Navigate to the Project Folder:**
-    *   You need to tell the Terminal where your "PCA Small Web app" folder is.
-    *   First, find the exact location of your "PCA Small Web app" folder on your computer. For example, it might be in your "Downloads" folder, "Documents", or "Desktop".
-    *   Once you know the path (e.g., `/Users/johnnywu/Desktop/Uni/Sem 2/COMP3888/COMP3888_M15_02_P23/PCA Small Web app`), use the `cd` command to go there.
-    *   Type `cd ` (note the space after `cd`), then drag and drop your "PCA Small Web app" folder directly into the Terminal window. This will automatically fill in the path. Press Enter.
+    *   **This is a crucial step.** All of the following commands must be run from inside the correct project folder.
     *   It should look something like this (your path will be different):
         ```bash
         cd "/path/to/your/COMP3888 public/PCA Small Web App"
@@ -40,14 +37,12 @@ The "Terminal" (or "Command Prompt" / "PowerShell") is where you'll type command
 
         > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\PCA Small Web App"`.
 
-<details>
-<summary>💡 Pro Tip: How to copy a file path</summary>
-
-*   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
-*   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
-
-You can then paste this path directly into the terminal after typing `cd `.
-</details>
+> **💡 Pro Tip: How to Copy a File Path**
+> 
+> *   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
+> *   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
+> 
+> You can then paste this path directly into the terminal after typing `cd `.
 
 ## Step 3: Create and Activate a Virtual Environment (Recommended)
 
@@ -70,6 +65,7 @@ A virtual environment keeps the app's dependencies separate from other Python pr
         ```bash
         .\venv\Scripts\Activate.ps1
         ```
+        > **PowerShell Users:** If you see an error running this script, you may need to open PowerShell as an Administrator and run the command `Set-ExecutionPolicy RemoteSigned` to allow scripts to execute.
     *   **macOS/Linux:**
         ```bash
         source venv/bin/activate
@@ -124,7 +120,9 @@ To stop the application, go back to the Terminal window where it's running and p
 
 *   **`command not found` (e.g., `python`):** This usually means Python was not added to your system's PATH. When installing, make sure to check the box that says "Add Python to PATH".
 
-*   **`pip install` fails:** This is often a network issue. Make sure you are connected to the internet. If you are on a corporate or university network, you may need to configure a proxy.
+*   **`pip install` fails:**
+    *   This can be a network issue. Make sure you are connected to the internet.
+    *   On Windows, if the installation fails with an error mentioning "C++" or "Microsoft Visual C++", you may need to install Microsoft's C++ Build Tools. This is an advanced step, but you can find the tools by searching for "Visual Studio Build Tools".
 
 *   **Server doesn't start or crashes:**
     *   Look for an **"Address already in use"** error in the terminal. This means another application is using the required port (e.g., 5000). You will need to close that other application or restart your computer.

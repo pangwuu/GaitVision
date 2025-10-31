@@ -25,8 +25,7 @@ Python is the programming language this application is built with. You need to i
     *   **macOS:** Search for "Terminal" in Spotlight (Cmd + Space).
 
 2.  **Navigate to the `PCA` Folder:**
-    *   Use the `cd` command to go to the `PCA` folder.
-    *   Type `cd ` (with a space), then drag and drop the "PCA" folder into the Terminal window. This will paste the correct path. Press Enter.
+    *   **This is a crucial step.** All of the following commands must be run from inside the correct project folder.
     *   It should look something like this (your path will be different):
         ```bash
         cd "/path/to/your/COMP3888 public/PCA"
@@ -34,14 +33,12 @@ Python is the programming language this application is built with. You need to i
 
         > **Note for Windows users:** Your path will look different, e.g., `cd "C:\Users\YourUser\Desktop\COMP3888 public\PCA"`.
 
-<details>
-<summary>💡 Pro Tip: How to copy a file path</summary>
-
-*   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
-*   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
-
-You can then paste this path directly into the terminal after typing `cd `.
-</details>
+> **💡 Pro Tip: How to Copy a File Path**
+> 
+> *   **On macOS:** Right-click on a file or folder, hold down the `Option` key, and select "Copy [item name] as Pathname".
+> *   **On Windows:** Hold down the `Shift` key and right-click on a file or folder, then select "Copy as path".
+> 
+> You can then paste this path directly into the terminal after typing `cd `.
 
 ## Step 3: Create and Activate a Virtual Environment
 
@@ -57,8 +54,9 @@ This creates a self-contained environment for the application's dependencies.
 2.  **Activate the Virtual Environment:**
     *   **Windows:**
         ```bash
-        .\venv\Scripts\activate
+        .\venv\Scripts\Activate.ps1
         ```
+        > **PowerShell Users:** If you see an error running this script, you may need to open PowerShell as an Administrator and run the command `Set-ExecutionPolicy RemoteSigned` to allow scripts to execute.
     *   **macOS/Linux:**
         ```bash
         source venv/bin/activate
@@ -106,7 +104,9 @@ The application will close automatically after the report is generated. You can 
 
 *   **`command not found` (e.g., `python`):** This usually means Python was not added to your system's PATH. When installing, make sure to check the box that says "Add Python to PATH".
 
-*   **`pip install` fails:** This is often a network issue. Make sure you are connected to the internet. If you are on a corporate or university network, you may need to configure a proxy.
+*   **`pip install` fails:**
+    *   This can be a network issue. Make sure you are connected to the internet.
+    *   On Windows, if the installation fails with an error mentioning "C++" or "Microsoft Visual C++", you may need to install Microsoft's C++ Build Tools. This is an advanced step, but you can find the tools by searching for "Visual Studio Build Tools".
 
 *   **Script fails to run:** For any errors, try to read the message in the terminal carefully. It will often give you a clue as to what went wrong (e.g., a file could not be found).
 

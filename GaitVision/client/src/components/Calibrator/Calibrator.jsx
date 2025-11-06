@@ -1,6 +1,5 @@
 import { useRef, useEffect, useState } from "react";
 import { useData } from "../DataContext/DataContext";
-// import React, { useState } from 'react';
 
 export default function Calibrator() {
     const fileInputRef = useRef();
@@ -54,7 +53,6 @@ export default function Calibrator() {
             })
             .then((json) => {
                 try {
-                    console.log("Raw API response:", json);
                     
                     const normalizationData = json.normalization_data;
                     const pcaSuggestions = json.pca_suggestions;
@@ -65,10 +63,9 @@ export default function Calibrator() {
                         return;
                     }
                     
-                    console.log("=== Calibration Data Received ===");
+
                     setCalibrationData(normalizationData.variables);
 
-                    console.log("=== PCA Suggestions Received ===");
                     setPcaSuggestions(pcaSuggestions);
 
                     setMessage(`'${file.name}' processed successfully!`);

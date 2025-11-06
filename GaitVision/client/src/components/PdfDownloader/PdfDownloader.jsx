@@ -270,7 +270,7 @@ export default function PdfDownloader({ targetRef, data}) {
     }
 
     // Save File
-    console.log(calibrationData);
+    
     const timestamp = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}_` +
                       `${String(now.getHours()).padStart(2,'0')}-${String(now.getMinutes()).padStart(2,'0')}`;
     // Save PDF with participant ID and timestamp

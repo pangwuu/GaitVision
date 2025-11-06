@@ -1,1 +1,4 @@
 */.DS_Store
+GaitVision/flask-server/__pycache__/
+GaitVision/client/node_modules
+GaitVision/client/build

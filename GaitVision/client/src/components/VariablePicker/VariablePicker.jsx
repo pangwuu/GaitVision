@@ -51,7 +51,7 @@ export default function VariablePicker() {
       newSelected.add(name);
     }
     setSelectedMetrics(newSelected);
-    console.log('Currently selected variables:', Array.from(newSelected));
+    
   };
 
   useEffect(() => {

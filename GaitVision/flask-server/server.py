@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-from normaliser import normalise_data
+from .normaliser import normalise_data
 import pandas as pd
-import formatter
+from . import formatter
 import os
-from pca_logic import get_pca_suggestions
+from .pca_logic import get_pca_suggestions
 
 app = Flask(__name__, static_folder='../client/build', static_url_path='/')
 CORS(app)

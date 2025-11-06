@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./App.css";
 import CsvUploader from "./components/CsvUploader/CsvUploader.jsx";
 import RadarPlot from "./components/RadarChart/RadarPlot.js";
@@ -12,7 +11,7 @@ import TaskPicker from "./components/TaskPicker/TaskPicker.jsx";
 
 export default function App() {
   // Changed to use DataContext to find necessary data
-  const { csvData, setCsvData } = useData();
+  const { csvData } = useData();
   
   
   return (

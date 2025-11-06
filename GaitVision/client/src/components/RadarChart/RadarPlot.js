@@ -21,26 +21,13 @@ function getLabels(data) {
         }
     }
     if (line) lines.push(line);
-    return (d.units != '') ? [...lines, `(${d.units})`]: [...lines];
+    return (d.units !== '') ? [...lines, `(${d.units})`]: [...lines];
     });
 }
 
 function getDatasets(data, selectedPlot, calibrationData, selectedTask, selectedTimepoint) {
     if (!data || data.length === 0 || !selectedPlot) return [];
 
-    // --- DIAGNOSTIC LOG ---
-    console.log("--- Z-Score Calculation Diagnosis ---");
-    console.log("Selected Task:", selectedTask);
-    console.log("Selected Timepoint:", selectedTimepoint);
-    console.log("Selected Plot:", selectedPlot);
-    if (calibrationData && calibrationData.length > 0) {
-        console.log("Structure of first calibrationData item:", calibrationData[0]);
-        
-    } else {
-        console.log("calibrationData is empty or not available.");
-    }
-    console.log("------------------------------------");
-    // --- END DIAGNOSTIC LOG ---
 
     // Helper function to calculate z-score, now context-aware
     const calculateZScore = (metricName, value, plotName) => {
@@ -51,12 +38,6 @@ function getDatasets(data, selectedPlot, calibrationData, selectedTask, selected
         
         // Force comparison to Baseline values
         const timepointToUse = baselineName;
-
-        console.log("Looking for 1:", {
-            name: metricName,
-            condition: selectedTask,
-            timepoint: timepointToUse
-        });
 
         let calibData = calibrationData.find(item => 
             item.name === metricName &&
@@ -76,11 +57,7 @@ function getDatasets(data, selectedPlot, calibrationData, selectedTask, selected
         }
         
         const zScore = (value - calibData.mean) / calibData.stdev;
-        console.log('Metric:', metricName);
-        console.log('Metric value:', value);     
-        console.log('Using mean:', calibData.mean);
-        console.log('Using stdev:', calibData.stdev);
-        console.log('Z Score:', zScore);
+
         return zScore;
     };
 
@@ -160,11 +137,6 @@ function getChartOptions(data, calibrationData, selectedTask, selectedPlot) {
             (!timepointToUse || item.timepoint === timepointToUse)
         );
 
-        console.log("Looking for 2:", {
-            name: metricName,
-            condition: selectedTask,
-            timepoint: timepointToUse
-        });        
 
         if (!calibData) {
             calibData = calibrationData.find(item => item.name === metricName);
@@ -310,7 +282,6 @@ export default function RadarPlot() {
             chartRef.current.destroy();
         }
 
-        console.log('FilteredData for Chart:', filteredData);
 
         // if (filteredData.length < 3 ) {
         //     chartRef.current = null;

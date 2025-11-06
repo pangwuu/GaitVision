@@ -6,7 +6,7 @@ set -o errexit
 echo "Building React frontend..."
 cd GaitVision/client
 npm install
-npm run build
+CI=false npm run build
 cd ../../ # Navigate back to the project root
 
 # Install Python dependencies for the backend

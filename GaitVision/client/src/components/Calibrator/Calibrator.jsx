@@ -35,7 +35,7 @@ export default function Calibrator() {
         const formData = new FormData();
         formData.append("file", file);
         
-        fetch("http://localhost:5001/normalise", {
+        fetch("/api/normalise", {
             method: "POST",
             body: formData,
         })

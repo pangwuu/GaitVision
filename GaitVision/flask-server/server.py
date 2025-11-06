@@ -1,14 +1,15 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from normaliser import normalise_data
 import pandas as pd
 import formatter
+import os
 from pca_logic import get_pca_suggestions
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../client/build', static_url_path='/')
 CORS(app)
 
-@app.route("/upload", methods=["GET", "POST"])
+@app.route("/api/upload", methods=["GET", "POST"])
 def upload_csv():
     if "file" not in request.files:
         return jsonify({"error": "No file uploaded"}), 400
@@ -27,7 +28,7 @@ def upload_csv():
         return jsonify({"error": str(e)}), 500
 
 
-@app.route("/normalise", methods=["POST"])
+@app.route("/api/normalise", methods=["POST"])
 def normalise_and_suggest():
     
     if "file" not in request.files:
@@ -74,5 +75,13 @@ def normalise_and_suggest():
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
+
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5001)
+    app.run(debug=False, host="0.0.0.0", port=5001)

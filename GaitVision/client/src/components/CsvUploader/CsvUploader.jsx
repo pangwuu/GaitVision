@@ -27,7 +27,7 @@ export default function CsvUploader() {
         const formData = new FormData();
         formData.append("file", file);
         
-        fetch("http://localhost:5001/upload", {   
+        fetch("/api/upload", {   
             method: "POST",
             body: formData,
         })

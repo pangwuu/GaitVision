@@ -1,6 +1,6 @@
 # COMP3888 Project: Data Analysis and Visualisation Tools
 
-This project contains three primary applications developed for data analysis and visualisation: a standalone PCA Analysis tool, a simple PCA web app, and the full-stack GaitVision Web Application.
+This project contains three primary applications developed for data analysis and visualisation: a standalone PCA Analysis tool, a simple PCA web app, and the full-stack GaitVision Web Application, which is deployed [here](https://gaitvision.onrender.com/).
 
 Each application is contained within its own directory and includes a detailed `README.md` file with specific setup instructions.
 

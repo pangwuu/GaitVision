@@ -19,7 +19,7 @@ export default function Calibrator() {
         const file = event.target.files[0];
         if (!file) return;
 
-        setMessage(`Normalising ${file.name} and generating PCA suggestions...`);
+        setMessage(`Normalising ${file.name}`);
         setProcessedFile("");
 
         const formData = new FormData();

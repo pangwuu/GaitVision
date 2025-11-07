@@ -331,13 +331,13 @@ export default function RadarPlot() {
                     <ul style={{ paddingLeft: "50px" }}>
                         <li>
                         <strong>Step 1:</strong> Upload the <em>Calibration Data</em> to calibrate the mean and standard deviation of all variables. 
-                        Ensure that the calibration data fits the file format described 
+                        Ensure that the calibration data fits the file format described{" "}
                         <a 
                             href="https://pangwuu.github.io/GaitVision/#file-format-overview" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            {" "}here
+                            here
                         </a>.
                         </li>
                         <li><strong>Step 2:</strong> Upload the <em>Patient CSV file</em>.</li>

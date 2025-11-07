@@ -53,3 +53,41 @@ In the root directory of this repository is a small CSV file called [`FileFormat
 * The remaining cells can be filled with data, as shown.
 * For the PCA tools and the normalisation part of GaitVision, ensure that you upload `all patient data` for the modules to perform accurate PCA analysis.
 * For the `patient upload` ensure you upload a single patient's data, similar to the file format shown shown in [`FileFormat.csv`](./FileFormat.csv)
+* Examples of the two files can be seen below.
+
+
+## An example of the calibration file
+| **Participant ID**  | **Timepoint (baseline/Postinjury)** | **Walk Task Condition (ST/HT/DT)** | **Athlete Intensity** | **Average Duty Factor** | **Average Flight Duration** | **Add variables as needed** |
+| ------------------- | ----------------------------------- | ---------------------------------- | --------------------- | ----------------------- | -------------------------------- | --------------------------- |
+|           |                                     |                                    | *g/s*                 | *ratio*                 | *g/s*                          | *unit*                      |
+| 1                   | Baseline                            | ST                                 | 191                   | 1                       | 158                              | ...                         |
+| 1                   | Baseline                            | HT                                 | 76                    | 65                      | 91                               | ...                         |
+| 1                   | Baseline                            | DT                                 | 170                   | 62                      | 115                              | ...                         |
+| 1                   | PI-1                                | ST                                 | 30                    | 153                     | 163                              | ...                         |
+| 1                   | PI-1                                | HT                                 | 92                    | 63                      | 98                               | ...                         |
+| 1                   | PI-1                                | DT                                 | 170                   | 73                      | 100                              | ...                         |
+| 1                   | PI-2                                | ST                                 | 126                   | 125                     | 184                              | ...                         |
+| 1                   | PI-2                                | HT                                 | 80                    | 182                     | 8                                | ...                         |
+| 1                   | PI-2                                | DT                                 | 44                    | 143                     | 39                               | ...                         |
+| 1                   | PI-3                                | ST                                 | 108                   | 159                     | 147                              | ...                         |
+| 1                   | PI-3                                | HT                                 | 113                   | 19                      | 73                               | ...                         |
+| 1                   | PI-3                                | DT                                 | 200                   | 74                      | 159                              | ...                         |
+| **Next patient ID** | **...**                             | **...**                            | ...                   | ...                     | ...                              | ...                         |
+
+## An example of the patient file
+
+| **Participant ID** | **Timepoint (baseline/Postinjury)** | **Walk Task Condition (ST/HT/DT)** | **Athlete Intensity** | **Average Duty Factor** | **Average Flight Duration** | **Add variables as needed** |
+| ------------------ | ----------------------------------- | ---------------------------------- | --------------------- | ----------------------- | --------------------------- | --------------------------- |
+|         |                                     |                                    | *g/s*                 | *ratio*                 | *g/s*                       | *unit*                      |
+| 1                  | Baseline                            | ST                                 | 191                   | 1                       | 80                          | ...                         |
+| 1                  | Baseline                            | HT                                 | 76                    | 65                      | 92                          | ...                         |
+| 1                  | Baseline                            | DT                                 | 170                   | 62                      | 163                         | ...                         |
+| 1                  | PI-1                                | ST                                 | 30                    | 153                     | 92                          | ...                         |
+| 1                  | PI-1                                | HT                                 | 92                    | 63                      | 25                          | ...                         |
+| 1                  | PI-1                                | DT                                 | 170                   | 73                      | 183                         | ...                         |
+| 1                  | PI-2                                | ST                                 | 126                   | 125                     | 7                           | ...                         |
+| 1                  | PI-2                                | HT                                 | 80                    | 182                     | 55                          | ...                         |
+| 1                  | PI-2                                | DT                                 | 44                    | 143                     | 179                         | ...                         |
+| 1                  | PI-3                                | ST                                 | 108                   | 159                     | 123                         | ...                         |
+| 1                  | PI-3                                | HT                                 | 113                   | 19                      | 20                          | ...                         |
+| 1                  | PI-3                                | DT                                 | 200                   | 74                      | 152                         | ...                         |

@@ -10,16 +10,7 @@ export default function Calibrator() {
         if (message) {
             const timer = setTimeout(() => {
                 setMessage("");
-            }, 5000); // 5 seconds
-            return () => clearTimeout(timer);
-        }
-    }, [message]);
-
-    useEffect(() => {
-        if (message) {
-            const timer = setTimeout(() => {
-                setMessage("");
-            }, 5000); // 5 seconds
+            }, 15000); // 15 seconds
             return () => clearTimeout(timer);
         }
     }, [message]);

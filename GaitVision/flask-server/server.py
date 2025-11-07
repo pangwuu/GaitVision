@@ -4,7 +4,7 @@ from .normaliser import normalise_data
 import pandas as pd
 from . import formatter
 import os
-from .pca_logic import get_pca_suggestions
+# from .pca_logic import get_pca_suggestions
 
 app = Flask(__name__, static_folder='../client/build', static_url_path='/')
 CORS(app)
@@ -44,25 +44,25 @@ def normalise_and_suggest():
         # --- Run Normalisation (Critical Step) ---
         normalization_results = normalise_data(df)
         
-        # --- Run PCA Suggestions (Optional Step) ---
-        pca_suggestions = None  # Default to None
-        try:
-            # The file pointer is at the end after the first read, so we reset it
-            file.seek(0)
-            df_for_pca = pd.read_csv(file)
-            pca_suggestions = get_pca_suggestions(df_for_pca)
-            print("PCA suggestions generated successfully.")
-        except Exception as pca_error:
-            print("--- WARNING: PCA suggestion step failed. --- ")
-            import traceback
-            traceback.print_exc()
-            print(f"PCA Error: {pca_error}")
-            print("--- Proceeding without PCA suggestions. ---")
+        # # --- Run PCA Suggestions (Optional Step) ---
+        # pca_suggestions = None  # Default to None
+        # try:
+        #     # The file pointer is at the end after the first read, so we reset it
+        #     file.seek(0)
+        #     df_for_pca = pd.read_csv(file)
+        #     pca_suggestions = get_pca_suggestions(df_for_pca)
+        #     print("PCA suggestions generated successfully.")
+        # except Exception as pca_error:
+        #     print("--- WARNING: PCA suggestion step failed. --- ")
+        #     import traceback
+        #     traceback.print_exc()
+        #     print(f"PCA Error: {pca_error}")
+        #     print("--- Proceeding without PCA suggestions. ---")
 
         # --- Combine Results ---
         combined_result = {
             "normalization_data": normalization_results,
-            "pca_suggestions": pca_suggestions  # This will be None if PCA failed
+            "pca_suggestions": None  # This will be None if PCA failed
         }
         
         print("Returning JSON with normalization data.")

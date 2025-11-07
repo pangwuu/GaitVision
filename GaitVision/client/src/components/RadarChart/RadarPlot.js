@@ -3,7 +3,6 @@ import { Chart } from "chart.js";
 import "chart.js/auto";
 import { useData } from "../DataContext/DataContext";
 
-
 const baselineName = "Baseline";
 
 function getLabels(data) {
@@ -49,7 +48,7 @@ function getDatasets(data, selectedPlot, calibrationData, selectedTask, selected
             // Fallback to find by name only if context-specific is not found
             calibData = calibrationData.find(item => item.name === metricName);
             if (calibData) {
-                console.warn(`No specific calibration data for ${metricName} could be found given the timepoint and session. Using general data.`);
+                console.warn(`No specific calibration data for ${metricName} could be found using baseline data. Using averages from all timepoints`);
             } else {
                 console.warn(`No calibration data found for metric: ${metricName}`);
                 return null;

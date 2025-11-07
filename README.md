@@ -57,9 +57,10 @@ In the root directory of this repository is a small CSV file called [`FileFormat
 
 
 ## An example of the calibration file
+
 | **Participant ID**  | **Timepoint (baseline/Postinjury)** | **Walk Task Condition (ST/HT/DT)** | **Athlete Intensity** | **Average Duty Factor** | **Average Flight Duration** | **Add variables as needed** |
 | ------------------- | ----------------------------------- | ---------------------------------- | --------------------- | ----------------------- | -------------------------------- | --------------------------- |
-|           |                                     |                                    | *g/s*                 | *ratio*                 | *g/s*                          | *unit*                      |
+|         |                                     |                                    | *g/s*                 | *ratio*                 | *g/s*                       | *unit*                      |
 | 1                   | Baseline                            | ST                                 | 191                   | 1                       | 158                              | ...                         |
 | 1                   | Baseline                            | HT                                 | 76                    | 65                      | 91                               | ...                         |
 | 1                   | Baseline                            | DT                                 | 170                   | 62                      | 115                              | ...                         |

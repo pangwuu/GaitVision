@@ -69,7 +69,6 @@ function getDatasets(data, selectedPlot, calibrationData, selectedTask, selected
     "rgba(199, 21, 133)"    // active4 — dark pink (#C71585)
     ];
 
-
     
     datasets.push({
         label: "Population Average",
@@ -330,7 +329,17 @@ export default function RadarPlot() {
                         Steps to Generate the Radar Chart
                     </h3>
                     <ul style={{ paddingLeft: "50px" }}>
-                        <li><strong>Step 1:</strong> Upload the <em>Calibration Data</em> to calibrate the mean and standard deviation of all variables.</li>
+                        <li>
+                        <strong>Step 1:</strong> Upload the <em>Calibration Data</em> to calibrate the mean and standard deviation of all variables. 
+                        Ensure that the calibration data fits the file format described 
+                        <a 
+                            href="https://pangwuu.github.io/GaitVision/#file-format-overview" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            {" "}here
+                        </a>.
+                        </li>
                         <li><strong>Step 2:</strong> Upload the <em>Patient CSV file</em>.</li>
                         <li><strong>Step 3:</strong> Select variables from the list.</li>
                         <li><strong>Step 4:</strong> Select the <em>Walk task condition</em>.</li>

@@ -2,7 +2,7 @@
 
 This project contains three primary applications developed for data analysis and visualisation: a standalone PCA Analysis tool, a simple PCA web app, and the full-stack GaitVision Web Application, which is deployed [here](https://gaitvision.onrender.com/).
 
-Each application is contained within its own directory and includes a detailed `README.md` file with specific setup instructions.
+Each application is contained within its own directory and includes a detailed `README.md` file with specific setup instructions. For comprehensive documentation, including running instructions, have a read of the [docs](https://pangwuu.github.io/GaitVision/).
 
 To download the source files for this project, go to the [repo](https://github.com/pangwuu/GaitVision), click the green `Code` button, and click `Download ZIP`. Make sure to unzip the folder afterwards!
 
